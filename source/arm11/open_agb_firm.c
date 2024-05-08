@@ -59,7 +59,7 @@ static OafConfig g_oafConfig =
 	true,  // useGbaDb
 
 	// [video]
-	2,     // scaler
+	1,     // scaler
 	2.2f,  // gbaGamma
 	1.54f, // lcdGamma
 	1.f,   // contrast
@@ -241,7 +241,7 @@ static void gbaGfxHandler(void *args)
 		}
 		GX_processCommandList(listSize, list);
 		GFX_waitForP3D();
-		GX_displayTransfer((u32*)GPU_RENDER_BUF_ADDR, 400u<<16 | 240, GFX_getFramebuffer(SCREEN_TOP), 400u<<16 | 240, 1u<<12 | 1u<<8);
+		GX_displayTransfer((u32*)GPU_RENDER_BUF_ADDR, 400u<<16 | 240, GFX_getFramebuffer(SCREEN_BOT), 400u<<16 | 240, 1u<<12 | 1u<<8);
 		GFX_waitForPPF();
 		GFX_swapFramebufs();
 

@@ -33,7 +33,7 @@
                         "directBoot=false\n"      \
                         "useGbaDb=true\n\n"       \
                         "[video]\n"               \
-                        "scaler=2\n"              \
+                        "scaler=1\n"              \
                         "gbaGamma=2.2\n"          \
                         "lcdGamma=1.54\n"         \
                         "contrast=1.0\n"          \
