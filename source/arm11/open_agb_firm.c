@@ -241,7 +241,7 @@ static void gbaGfxHandler(void *args)
 		}
 		GX_processCommandList(listSize, list);
 		GFX_waitForP3D();
-		GX_displayTransfer((u32*)GPU_RENDER_BUF_ADDR, 400u<<16 | 240, GFX_getFramebuffer(SCREEN_BOT), 400u<<16 | 240, 1u<<12 | 1u<<8);
+		GX_displayTransfer((u32*)GPU_RENDER_BUF_ADDR, 400u<<16 | 240, GFX_getFramebuffer(SCREEN_BOT), 320u<<16 | 240, 1u<<12 | 1u<<8);
 		GFX_waitForPPF();
 		GFX_swapFramebufs();
 
