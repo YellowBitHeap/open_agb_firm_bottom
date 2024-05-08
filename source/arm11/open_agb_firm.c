@@ -522,7 +522,7 @@ Result oafInitAndRun(void)
 				// Force black and turn the backlight off on the bottom screen.
 				// Don't turn the backlight off on 2DS (1 panel).
 				GFX_setForceBlack(false, true);
-				if(MCU_getSystemModel() != 3) GFX_powerOffBacklights(GFX_BLIGHT_BOT);
+				if(MCU_getSystemModel() != 3) GFX_powerOffBacklights(GFX_BLIGHT_TOP);
 #endif
 
 				// Initialize frame capture and frame handler.
