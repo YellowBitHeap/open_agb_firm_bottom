@@ -26,7 +26,7 @@
 
 
 #define INI_BUF_SIZE    (1024u)
-// Note: Keep this synchronized with g_oafConfig in open_agb_firm.c.
+// Note: Keep this synchronized with g_oafConfig in open_agb_firm.c..
 #define DEFAULT_CONFIG  "[general]\n"             \
                         "backlight=64\n"          \
                         "backlightSteps=5\n"      \
